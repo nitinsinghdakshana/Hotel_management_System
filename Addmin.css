@@ -1,0 +1,108 @@
+body
+{
+ background-image: url(images/hotel.jpg);
+ height: 500px;
+}
+header a button
+	{
+
+		float: right;
+		cursor: pointer;
+		width: auto;
+		font-size: 22px;
+		background-color: red;
+		background-image: linear-gradient(-45deg,green,yellow,white,white,yellow,green);
+		box-shadow:5px 5px 5px 0 black;
+		padding:5px;  
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 10px;
+	}
+header a button:hover
+	{
+		background-color: lightblue;
+		background-image: linear-gradient(-45deg,black,red,yellow,red,black);
+	}
+
+#textboxid
+	{
+         width:240px;
+         height:24px;
+         border:1px solid #DADCE0;
+         border-radius:4px;
+         font-size:12pt;
+         font-family:verdana;
+         background:#DEDEDC;
+         color:#737373;
+         margin-top:20px;
+         margin-left:40px;
+         padding:10px;
+        }
+       .b
+       {
+        width:260px;
+        height:44px;	
+        margin-top:20px;
+        margin-bottom:40px;
+        margin-left:40px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-top:7px;
+        padding-bottom:7px;
+        background:#3090C7;
+        border-radius:4px;
+        border:1px solid #DADCE0;
+       }
+	
+	    .dropdown
+	 	{
+	 		position: relative;
+	 		display: inline-block;
+	 		float:left;
+	 		margin-top:20px;
+	 		margin-left:40px;
+	 	}
+	 	.dropbtn
+	    {
+	       background-color: red;
+	       color:white;
+	       font-size:12pt;
+	       padding:10px;
+	       border:none;
+	       width:175px;	
+	    }
+	    .dropdown-content
+	    {
+	    	display:none;
+	    	position:absolute;
+	    	background-color:#f1f1f1;
+	    	min-width: 160px;
+	    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    	z-index: 1;
+	    }
+	    .dropdown-content a
+	    {
+	    	text-decoration:none;
+	    	padding:12px 16px;
+	    	display:block;
+	    	color:black;
+	    }
+	    .dropdown-content a:hover
+	    {
+	    	background-color:#ddd;
+	    }
+	    .dropdown:hover .dropdown-content
+	    {
+	    	display:block;
+	    }
+	    .dropdown:hover .dropbtn
+	    {
+	    	background-color:#3e84e1;
+	    }	
+	    .h
+	    {
+            background-color: white;
+            width:1100px;
+            height:400px;
+            padding-bottom: 20px;
+	    }

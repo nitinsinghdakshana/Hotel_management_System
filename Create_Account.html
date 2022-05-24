@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Google Docx </title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript">
+
+function Form_Validate()
+{
+ var a=document.forms["myform"]["FirstName"];
+ var b=document.forms["myform"]["LastName"];
+ var c=document.forms["myform"]["Email"];
+ var d=document.forms["myform"]["Password"];
+ var e=document.forms["myform"]["ConfirmPassword"];
+ var f=document.forms["myform"]["Checkbox"];
+ 
+ if(a.value=="")
+ {
+  window.alert("Please enter your First Name");
+  a.focus();
+  return false;
+ }
+ if(b.value=="")
+ {
+  window.alert("Please enter your Last Name");
+  b.focus();
+  return false;
+ }
+ if(c.value=="")
+ {
+  window.alert("Please enter your Email");
+  c.focus();
+  return false;
+ }
+ if(c.value.indexOf("@",0)<0)
+ {
+  window.alert("Please enter a valid Email");
+  c.focus();
+  return false;
+ }
+ if(c.value.indexOf(".",0)<0)
+ {
+  window.alert("Please enter a valid Email");
+  c.focus();
+  return false;
+ }
+ if(d.value=="")
+ {
+  window.alert("Please enter the Password");
+  d.focus();
+  return false;
+ }
+ if(e.value=="")
+ {
+  window.alert("Please Confirm your Password");
+  e.focus();
+  return false;
+ }
+ if(f.value=="")
+ {
+  window.alert("Agree to the Terms&Conditions");
+  f.focus();
+  return false;
+ }
+ if(d.value!=e.value)
+ {
+  window.alert("Password didn't match Re-enter it");
+  e.focus();
+  return false;
+ }
+ return true;
+}
+</script>
+</head>
+<body style="background-image: url(images/11.jpg)">
+<div class="e">
+<div class="m">
+<form name="myform" onsubmit="return Form_Validate()" action="submit.php" method="post">
+<p1><span class="t"><b>Sign Up</b></span></p1>
+<p><span class="x"> Please fill in this form to create an account!</span></p>
+<hr>
+<input id="textboxid" type="text" name="FirstName" placeholder="First Name" autofocus required><input id="textbox" type="text" name="LastName" placeholder="Last Name"><br>
+<input id="textboxids" type="email" name="Email" placeholder="Email" required><br>
+<input id="p" type="password" name="Password" placeholder="Password"><br>
+<input id="q" type="password" name="ConfirmPassword" placeholder="Confirm Password"><br>
+<input type="Checkbox" style="margin-left:15px;margin-top:15px;" name="Checkbox"> I accept the <span style="color:#3090C7;"> Terms of Use </span> & <span style="color:#3090C7;"> Privacy Policy </span><br>
+<div class="d"><input id="Button" type="Submit" value="Sign Up"><br>
+</form> 
+</div>
+<p><center><span style="color:White;margin-top:20px;font-family:Arial;"> Already have an account?<u><a href="login.html"> Login here.</a> </u></span></center></p>
+</div>
+</div>
+</body>
+</html>

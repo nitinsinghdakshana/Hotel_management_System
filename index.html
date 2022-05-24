@@ -1,0 +1,158 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Hotel Management</title>
+<link rel="stylesheet" type="text/css" href="index.css"/>	
+<script src="dhtmlxcalendar.js"></script>	
+<style>
+		#calendar,
+		#calendar2,
+		 	{
+			border: 1px solid red;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+</style>
+</head>
+<body>
+<div id="holder"><img src="images/90.png" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+    	<li><a href="Create_Account.html">SignUp/Login</a></li>
+    	<li><a href="overview.html">Overview</a></li>
+    	<li><a href="aboutus.html">About us</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div>
+	<br> 
+    <div id="ab">
+    <div id="check">
+    <br>
+	<form action="check.php" method="post">
+		<div style="position:relative;height:80px;">
+		<label for="in">Check in:</label> 
+            		<input id="calendar" name="in" placeholder="2019-08-21" required="" type="date"> <br><br>
+		
+		<label for="in">Check out:</label>
+            		<input id="calendar2" name="out" placeholder="2019-08-22" required="" type="date"> <br><br>
+		
+		</div>
+			Room Type:
+                <select name="room">
+                    <option value="A/C">A/C</option>
+        			<option value="Non-A/C">Non-A/C</option>
+                </select>
+                <select name="type">
+                    <option value="single">Single</option>
+					<option value="double">Double</option>
+                    <option value="three">Three</option>
+                </select>
+	<br><br>
+	<input type="submit" name="submit" value="submit" />
+	<input type="reset" name="reset" value="Reset" />
+</form>
+   </div>
+   <div id="chat">
+    	<form action="" method="post">
+				<label for="in">Chat</label> 
+					<textarea rows="5" cols="25" name="chat" placeholder="message" required="" style="margin-bottom: 10px;"> </textarea>
+					<input type="submit" name="submit" value="send"  />
+				</form>
+    </div>
+	<br>
+	<br>
+  <br>
+    <div id="fd" style="margin-bottom:20px;"> 
+				<form action="feedback.php" method="post" style="margin-bottom:10px;">
+				<label for="in">Feedback</label> 
+					<textarea rows="5" cols="25" name="feed" placeholder="Type message" required="" style="margin-bottom: 10px;"> </textarea>
+					<input type="submit" name="submit" value="send" />
+				</form>
+	</div>
+	</div>
+        <br clear="all"/>
+ 	<div id="ac">
+    	<h1 style="font-style: italic;color: lightblue">A/C</h1>
+    		<div id="a"style="font-style: italic;color:blue">
+            <br><br><br><br>
+        	
+           		Single Rs.2000
+          	 	<br>
+                <a href="video.html"><input type="submit" value="View"></a>
+           	<a href="book.html"><input type="submit" value="Booking"></a>
+        	</div>
+        	<div id="b"style="font-style: italic;color:blue">
+          		<br><br><br><br>
+           		
+				Double Rs.3000
+           		 <br>
+                <a href="video.html"><input type="submit" value="View"></a>
+           		<a href="book.html"><input type="submit" value="Booking"></a>
+        	</div>
+        	<div id="c"style="font-style: italic;color:blue">
+        		<br><br><br><br>
+           
+                Three Rs.5000
+                <br>
+               <a href="video.html"><input type="submit" value="View"></a>
+               <a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div>
+          </div>
+   
+    <div id="offer">
+    	<h1 style="font-style: italic;color: lightblue">Special Offers</h1>
+        	<div id="a1"style="font-style: italic;color:blue"><p></p>
+            <br><br>
+      			  Single Bed<br>
+      			  Three Booking<br>For <b>5</b>% discount
+    		</div>
+            <div id="b1"style="font-style: italic;color:blue"><p></p><br>
+           <br>
+      			  Double Bed<br>
+      			  Three Booking<br> For <b>10</b>% discount
+    		</div>
+            <div id="c1"style="font-style: italic;color:blue"><p></p><br>
+            <br>
+      			  Three Bed<br>
+      			  Three Booking<br> For <b>15</b>% discount
+    		</div>
+    </div>
+    <div id="nonac">
+    	<h1 style="font-style: italic;color: lightblue">Non-A/C</h1>
+        	<div id="a2"style="font-style: italic;color:blue">
+           <p></p>
+           		Single Rs.1000
+          	 	<br>
+                <a href="video.html"><input type="submit" value="View"></a>
+           		<a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div>
+        	<div id="b2"style="font-style: italic;color:blue">
+          		<p></p> 
+				Double Rs.2000
+           		 <br>
+                <a href="video.html"><input type="submit" value="View"></a>
+           		 <a href="book.html"><input type="submit" value="Booking"></a>
+        	</div>
+        	<div id="c2"style="font-style: italic;color:blue">
+        	<p></p>
+                Three Rs.3500
+                <br>
+                <a href="video.html"><input type="submit" value="View"></a>
+                <a href="book.html"><input type="submit" value="Booking"></a>	
+        	</div>
+    </div>
+	<div id="rest">
+    	<h1 style="font-style: italic;color: lightblue">Special Dishes</h1>
+        	<div id="a3">
+            </div>
+            <div id="b3">
+		<a href="#"></a>
+            </div>
+            <div id="c3">
+            </div>
+	</div>
+</div>
+</body>
+</html>

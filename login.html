@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="login.css"/>
+<script type="text/javascript">
+function clicked()
+   {
+    alert('Successfully submitted');
+    }
+
+    $("#formname").resetForm();
+</script>
+</head>
+<body>
+<div id="holder"><a href="https://www.co.in"><img src="images/90.png" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+    	<li><a href="Rohit_Admin.html">AdminLogin</a></li>
+    	<li><a href="overview.html">Overview</a></li>
+    	<li><a href="selecthotel.html">Hotel</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div>
+<div id="login">
+<br>
+
+	<h1 style="padding-right:200px;font-style: italic;color:black">User Login</h1>
+
+  		<div id="p"><br><br><br>
+	<form action="login.php" method="post">
+<label for="number">Email:</label>
+            <input type="email" placeholder="username/email" name="Email" required="" type="text"> <br><br>
+<label for="number">Password:</label>
+            <input type="password" placeholder="Password" name="password" required="" type="text"> <br><br>
+
+<input type="submit" name="submit" value="login"/>
+</form>
+        </div>
+</div>
+</div>
+</body>
+</html>
